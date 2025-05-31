@@ -72,8 +72,7 @@ import junit.framework.TestSuite;
  */
 public class XSOMParserTest extends TestCase {
 
-    private static String docURLStr = "http://docs.oasis-open.org/regrep/v3.0/schema/lcm.xsd";
-    //private static String docURLStr = "http://ebxmlrr.sourceforge.net/private/sun/irs/ContactMechanism/IRS-ContactMechanismCommonAggregateComponents-1.0.xsd";
+    private static String docURLStr = "https://docs.oasis-open.org/regrep/v3.0/schema/lcm.xsd";
     private static URL docURL = null;
     private static XSOMParser instance = null;
 
@@ -107,7 +106,7 @@ public class XSOMParserTest extends TestCase {
         //Following works.
         instance.parse(docURL);
 
-        //Follwoing does not work
+        //Following does not work
         InputSource inputSource = new InputSource(docURL.openStream());
 
         instance.parse(inputSource);
