@@ -5,13 +5,13 @@ name: Checked
 
 on:
   push:
-    branches: [ main ]
+    branches: [ test-action ]
   pull_request:
     branches: [ main ]
 
 jobs:
   build_maven:
-    if: ${{ github.repository == 'atlasmap/atlasmap' }}
+#    if: ${{ github.repository == 'atlasmap/atlasmap' }}
     runs-on: ${{ matrix.os }}
     strategy:
       fail-fast: false
