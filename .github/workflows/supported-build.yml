@@ -52,9 +52,9 @@ jobs:
   chromatic:
     needs: build_maven
     if: |
-      github.repository == 'atlasmap/atlasmap'
-      && github.actor != 'dependabot[bot]'
-      && github.actor != 'dependabot'
+#      github.repository == 'atlasmap/atlasmap'
+#      && github.actor != 'dependabot[bot]'
+#      && github.actor != 'dependabot'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
