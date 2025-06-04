@@ -80,7 +80,7 @@ jobs:
 #        if: steps.changed-ui.outputs.changed == 'true'
         uses: chromaui/action@v1
         env:
-          NODE_OPTION: --openssl-legacy-provider
+          NODE_OPTIONS: --openssl-legacy-provider
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           projectToken: adaaa25c3df8
