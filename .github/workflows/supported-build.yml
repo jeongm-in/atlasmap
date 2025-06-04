@@ -65,19 +65,19 @@ jobs:
         with:
           paths: ui
       - name: Install dependencies
-        if: steps.changed-ui.outputs.changed == 'true'
+#        if: steps.changed-ui.outputs.changed == 'true'
         run: yarn install
         working-directory: ui
       - name: build @atlasmap/core
-        if: steps.changed-ui.outputs.changed == 'true'
+#        if: steps.changed-ui.outputs.changed == 'true'
         run: yarn build:module
         working-directory: ui/packages/atlasmap-core
       - name: prebuild
-        if: steps.changed-ui.outputs.changed == 'true'
+#        if: steps.changed-ui.outputs.changed == 'true'
         run: yarn prebuild
         working-directory: ui/packages/atlasmap
       - name: Publish to Chromatic
-        if: steps.changed-ui.outputs.changed == 'true'
+#        if: steps.changed-ui.outputs.changed == 'true'
         uses: chromaui/action@v1
         env:
           NODE_OPTION: --openssl-legacy-provider
