@@ -10,22 +10,22 @@ on:
     branches: [ main ]
 
 jobs:
-#  build_maven:
-##    if: ${{ github.repository == 'atlasmap/atlasmap' }}
-#    runs-on: ${{ matrix.os }}
-#    strategy:
-#      fail-fast: false
-#      matrix:
-#        java: [ '17' ]
-#        os: [macos-13]
-#    name: ${{ matrix.os }}/Java${{ matrix.java }}
-#    steps:
-#    - uses: actions/checkout@v4
-#    - name: Set up Java versions
-#      uses: actions/setup-java@v4
-#      with:
-#        java-version: ${{ matrix.java }}
-#        distribution: 'temurin'
+  build_maven:
+#    if: ${{ github.repository == 'atlasmap/atlasmap' }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        java: [ '17' ]
+        os: [macos-13]
+    name: ${{ matrix.os }}/Java${{ matrix.java }}
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up Java versions
+      uses: actions/setup-java@v4
+      with:
+        java-version: ${{ matrix.java }}
+        distribution: 'temurin'
 #    - name: Setup Chrome and ChromeDriver
 #      uses: browser-actions/setup-chrome@v1
 #      id: setup_chrome
