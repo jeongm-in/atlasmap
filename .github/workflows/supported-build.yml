@@ -78,7 +78,7 @@ jobs:
         working-directory: ui/packages/atlasmap
       - name: Publish to Chromatic
 #        if: steps.changed-ui.outputs.changed == 'true'
-        uses: chromaui/action@v1
+        uses: chromaui/action@v11
         env:
           NODE_OPTIONS: --openssl-legacy-provider
         with:
