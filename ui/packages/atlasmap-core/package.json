@@ -33,14 +33,13 @@
     "text-encoding": "^0.7.0",
     "ts-jest": "^24.3.0",
     "tsdx": "^0.13.1",
-    "typescript": "~3.9.9",
-    "undici": "^7.10.0"
+    "typescript": "~3.9.9"
   },
   "peerDependencies": {
     "@types/file-saver": "^2.0.2",
     "@types/pako": "^1.0.1",
     "file-saver": "^2.0.5",
-    "ky": "^0.33.3",
+    "ky": "^1.0.0",
     "loglevel": "^1.7.1",
     "pako": "^2.0.3",
     "rxjs": "^6.6.7"
