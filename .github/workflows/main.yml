@@ -7,7 +7,7 @@ on:
 jobs:
   build-main:
     if: ${{ github.repository == 'atlasmap/atlasmap' }}
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
@@ -34,6 +34,8 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-maven-
       - name: Build
+        env:
+          NODE_OPTIONS: --openssl-legacy-provider
         run: mvn --batch-mode -X -Pcoverage -Dwebdriver.chrome.driver=${{ steps.setup_chrome.outputs.chromedriver-path }} clean install
 
       - name: Publish docs

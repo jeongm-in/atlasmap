@@ -21,7 +21,6 @@
     <groupId>io.atlasmap</groupId>
     <artifactId>atlasmapio</artifactId>
     <version>2.6.0-SNAPSHOT</version>
-    <relativePath>..</relativePath>
   </parent>
 
   <artifactId>atlas-parent</artifactId>
@@ -40,7 +39,7 @@
     <build-helper-maven-plugin.version>3.3.0</build-helper-maven-plugin.version>
     <byte-buddy.version>1.13.0</byte-buddy.version>
     <camel.version>2.25.4</camel.version>
-    <camel3.version>3.11.0</camel3.version>
+    <camel3.version>3.22.4</camel3.version>
     <commons-csv.version>1.10.0</commons-csv.version>
     <commons-lang3.version>3.12.0</commons-lang3.version>
     <daffodil.version>3.4.0</daffodil.version>
@@ -84,6 +83,11 @@
     <osgi.include.resource.atlasmap>${osgi.include.resource}</osgi.include.resource.atlasmap>
     <osgi.symbolic.name>${project.artifactId}</osgi.symbolic.name>
     <osgi.import.pkg>*</osgi.import.pkg>
+    <osgi.exclude.dependencies/>
+    <osgi.export.pkg/>
+    <osgi.export.service/>
+    <osgi.embed.dependency/>
+    <osgi.embed.transitive/>
     <resteasy-spring-boot-starter.version>5.0.0.Final</resteasy-spring-boot-starter.version>
     <selenium.version>4.8.0</selenium.version>
     <slf4j.version>2.0.6</slf4j.version>
