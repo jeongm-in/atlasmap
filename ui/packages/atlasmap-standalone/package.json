@@ -69,8 +69,8 @@
       ],
       "sort-imports": "error"
     },
-    "env": {
-      "es2020": true
+    "globals": {
+      "globalThis": "readonly"
     }
   },
   "browserslist": {

@@ -70,6 +70,9 @@
         "../../atlasmap-license-header-ui.js"
       ],
       "sort-imports": "error"
+    },
+    "globals": {
+      "globalThis": "readonly"
     }
   },
   "browserslist": {
