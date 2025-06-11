@@ -83,7 +83,7 @@
     "d3-scale": "^3.3.0",
     "d3-shape": "^2.1.0",
     "he": "^1.2.0",
-    "ky": "^0.33.3",
+    "ky": "^1.0.0",
     "react": "^17.0.2",
     "react-dnd": "^14.0.2",
     "react-dnd-html5-backend": "^14.0.0",
@@ -111,7 +111,8 @@
   },
   "jest": {
     "setupFilesAfterEnv": [
-      "<rootDir>/test/setup.ts"
+      "<rootDir>/test/setup.ts",
+      "<rootDir>/jest.setup.js"
     ],
     "moduleNameMapper": {
       "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/test/__mocks__/fileMock.js"
