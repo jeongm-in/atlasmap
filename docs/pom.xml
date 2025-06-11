@@ -304,11 +304,11 @@
                   <backend>html5</backend>
                   <doctype>book</doctype>
                   <preserveDirectories>true</preserveDirectories>
-                  <sourceHighlighter>coderay</sourceHighlighter>
                   <attributes>
                     <imagesdir>images</imagesdir>
                     <toc>left</toc>
                     <linkcss>false</linkcss>
+                    <sourceHighlighter>coderay</sourceHighlighter>
                   </attributes>
                 </configuration>
               </execution>
@@ -324,11 +324,11 @@
                   <backend>html5</backend>
                   <doctype>book</doctype>
                   <preserveDirectories>true</preserveDirectories>
-                  <sourceHighlighter>coderay</sourceHighlighter>
                   <attributes>
                     <imagesdir>images</imagesdir>
                     <toc>left</toc>
                     <linkcss>false</linkcss>
+                    <sourceHighlighter>coderay</sourceHighlighter>
                   </attributes>
                 </configuration>
               </execution>
@@ -362,9 +362,9 @@
                   <sourceDocumentName>index.adoc</sourceDocumentName>
                   <outputDirectory>${project.build.directory}/generated-docs/pdf/user-guide</outputDirectory>
                   <backend>pdf</backend>
-                  <sourceHighlighter>rouge</sourceHighlighter>
                   <attributes>
                     <toc />
+                    <sourceHighlighter>rouge</sourceHighlighter>
                   </attributes>
                 </configuration>
               </execution>
@@ -379,9 +379,9 @@
                   <sourceDocumentName>index.adoc</sourceDocumentName>
                   <outputDirectory>${project.build.directory}/generated-docs/pdf/developer-guide</outputDirectory>
                   <backend>pdf</backend>
-                  <sourceHighlighter>rouge</sourceHighlighter>
                   <attributes>
                     <toc />
+                    <sourceHighlighter>rouge</sourceHighlighter>
                   </attributes>
                 </configuration>
               </execution>
