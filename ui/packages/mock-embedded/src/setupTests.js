@@ -13,6 +13,8 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 */
+const { TextEncoder } = require('util');
+const fetch = require('node-fetch');
 
 process.on('unhandledRejection', (reason) => {
   console.log('REJECTION', reason);
@@ -26,3 +28,19 @@ global.MutationObserver = jest.fn(function MutationObserver(callback) {
     callback(mockedMutationsList, this);
   };
 });
+
+if (!globalThis.fetch) {
+  globalThis.fetch = fetch;
+}
+if (!globalThis.Headers) {
+  globalThis.Headers = fetch.Headers;
+}
+if (!globalThis.Request) {
+  globalThis.Request = fetch.Request;
+}
+if (!globalThis.Response) {
+  globalThis.Response = fetch.Response;
+}
+if (typeof global.TextEncoder === 'undefined') {
+  global.TextEncoder = TextEncoder;
+}
