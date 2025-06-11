@@ -68,6 +68,9 @@
         "../../atlasmap-license-header-ui.js"
       ],
       "sort-imports": "error"
+    },
+    "parserOptions": {
+      "ecmaVersion": 2020
     }
   },
   "browserslist": {
