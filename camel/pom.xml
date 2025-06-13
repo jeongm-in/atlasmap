@@ -74,9 +74,9 @@
     </dependency>
     <!-- for testing -->
     <dependency>
-      <groupId>jakarta.xml.bind</groupId>
-      <artifactId>jakarta.xml.bind-api</artifactId>
-      <version>2.3.3</version>
+      <groupId>com.sun.xml.bind</groupId>
+      <artifactId>jaxb-impl</artifactId>
+      <version>2.3.1</version>
       <scope>test</scope>
     </dependency>
     <dependency>
